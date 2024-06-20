@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイポートフォリオ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="mainvisual">
+        <header id="header">
+            <h1>マイポートフォリオ</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <img src="images/sample.jpg" alt="メインビジュアル1">
+        <div class="catch">
+            <span class="catch-copy">キャッチコピー</span>
+            <p>伝えたいメッセージ</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="works" class="wrapper">
+            <h2 class="sec-title">WORKS</h2>
+            <div class="grid">
+                <a href="art/art1.html">
+                    <img src="images/sample2.jpg" alt="作品1">
+                    <span>Webサイト</span>
+                    <p>説明文</p>
+                </a>
+                <a href="">
+                    <img src="images/sample2.jpg" alt="作品1">
+                    <span>Webサイト</span>
+                    <p>説明文</p>
+                </a>
+                <a href="">
+                    <img src="images/sample2.jpg" alt="作品1">
+                    <span>Webサイト</span>
+                    <p>説明文</p>
+                </a>
+                <a href="">
+                    <img src="images/sample2.jpg" alt="作品1">
+                    <span>Webサイト</span>
+                    <p>説明文</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="wrapper">
+            <h2 class="sec-title">ABOUT</h2>
+            <div class="flex">
+                <div class="profile">
+                    <img src="images/sample3.jpg" alt="自分">
+                    <h3>profile</h3>
+                    <ul>
+                        <li>酒井　正義</li>
+                        <li>会計業界で</li>
+                    </ul>
+                </div>
+                <div class="study">
+                    <h3>学習進捗</h3>
+                    <ul>
+                        <li>HTML:基本的なタグを取得</li>
+                        <li>CSS:レスポンシブルデザインを取得</li>
+                        <li>unity:2D横スクロールアクション、トップビューゲームを作成</li>
+                        <li>unity:3Dスマホゲーム作成</li>
+                        <li>2Dトップビューゲームでのボスキャラクターモーション加えたゲームの作成</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="wrapper">
+            <h2 class="sec-title">Contact</h2>
+            <form action="#" method="post">
+                <!-- #　自分のページに戻る -->
+                <dl>
+                    <dt><label for="name">NAME</label></dt>
+                    <dd><input type="text" id="name" name="your-name"></dd>
+                    <dt><label for="email">E-mail</label></dt>
+                    <dd><input type="email" id="email" name="your-email"></dd>
+                    <dt><label for="message">MESSAGE</label></dt>
+                    <dd><textarea id="message" name="your-message"></textarea></dd>
+                </dl>
+                <input class="button" type="submit" value="仕事の依頼をする">
+                ※送信はできません。デザインだけです。
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <p class="copy-right">&copy;マイポートフォリオ2024</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
