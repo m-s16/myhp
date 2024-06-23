@@ -144,7 +144,7 @@
 
       <a href="s2_20240620最終版.unitypackage" download="s2_20240620最終版.unitypackage">ダウンロードはコチラ
       </a>
-      <p>コードの説明、うまくいった点、反省点、課題、エピソード、評価してもらって直した点
+      <p>以下はボスの周りをまわる火の玉のコードです。４つある火の玉がそれぞれ違う場所から回り始めるように、パグリック変数を用意しました。ほぼ自分で考えて作ってみたコードなので、クローンを作った方が効率がいいのかなど、まだ試行錯誤の余地があると感じました。
       </p>
       <pre class="code_text">
 using System.Collections;
@@ -189,8 +189,8 @@ public class s2Bullet2Controller : MonoBehaviour
              bossx = boss.transform.position.x;
              bossy = boss.transform.position.y;
               
-             pos.x = (Mathf.Cos(Time.time * 3 + a) * Distabossx;
-             pos.y = (Mathf.Sin(Time.time * 3 + a) * Distabossy;
+             pos.x = (Mathf.Cos(Time.time * 3 + a) * Distance) + bossx;
+             pos.y = (Mathf.Sin(Time.time * 3 + a) * Distance) + bossy;
               
              myTransform.position = pos;
          }
